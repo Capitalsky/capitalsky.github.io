@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.5" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My New Hugo Site</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://capitalsky.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://capitalsky.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://capitalsky.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://capitalsky.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="https://capitalsky.github.io/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
+  
+</head>
+
+  <body class="theme-base-0a ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://capitalsky.github.io/"><h1>My New Hugo Site</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://capitalsky.github.io/">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="posts">
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://capitalsky.github.io/content/post/blog-two/">Blog Two</a>
+  </h1>
+  <time datetime="2019-05-10T23:11:25&#43;0800" class="post-date">Fri, May 10, 2019</time>
+  shiro权限管理
+一 概念 Authentication(认证)：用户身份识别及登录。 Authorization(授权)：访问控制。比如某个用户是否具有某个操作的使用权限。 Session Management(会话管理)：特定于用户的会话管理，甚至在非web或EJB应用程序。 Cryptography(加密)：在对数据源使用加密算法加密的同时，保证易于使用。
+二 主要的类 1.Subject：当前用户，Subject可以是一个人，也可以是第三方服务 2.SecurityManager：管理所有Subject，可以配合内部安全组件。 3.principals：身份，即主体的标识属性，可以是任何东西，如用户名、邮箱等，唯一即可。一个主体可以有多个principals，但只有一个Primary principals，一般是用户名/密码/手机号。 4.credentials：证明/凭证，即只有主体知道的安全值，如密码/数字证书等。 最常见的principals和credentials组合就是用户名/密码了。 5.Realms：用于进行权限信息的验证，需要自己实现。 6.Realm 本质上是一个特定的安全 DAO：它封装与数据源连接的细节，得到Shiro 所需的相关的数据。 在配置 Shiro 的时候，你必须指定至少一个Realm 来实现认证（authentication）和/或授权（authorization）。 我们需要实现Realms的Authentication 和 Authorization。其中 Authentication 是用来验证用户身份，Authorization 是授权访问控制，用于对用户进行的操作授权，证明该用户是否允许进行当前操作，如访问某个链接，某个资源文件等。 7.SimpleHash，可以通过特定算法(比如md5)配合盐值salt，对密码进行多次加密。
+三 Shiro配置 1.Spring集成Shiro一般通过xml配置，SpringBoot集成Shiro一般通过java代码配合@Configuration和@Bean配置。 2.Shiro的核心通过过滤器Filter实现。Shiro中的Filter是通过URL规则来进行过滤和权限校验，所以我们需要定义一系列关于URL的规则和访问权限。 3.SpringBoot集成Shiro，我们需要写的
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="https://capitalsky.github.io/content/post/my-first-blog/">My First Blog</a>
+  </h1>
+  <time datetime="2019-05-10T22:26:37&#43;0800" class="post-date">Fri, May 10, 2019</time>
+  shiro权限管理
+一 概念 Authentication(认证)：用户身份识别及登录。 Authorization(授权)：访问控制。比如某个用户是否具有某个操作的使用权限。 Session Management(会话管理)：特定于用户的会话管理，甚至在非web或EJB应用程序。 Cryptography(加密)：在对数据源使用加密算法加密的同时，保证易于使用。
+二 主要的类 1.Subject：当前用户，Subject可以是一个人，也可以是第三方服务 2.SecurityManager：管理所有Subject，可以配合内部安全组件。 3.principals：身份，即主体的标识属性，可以是任何东西，如用户名、邮箱等，唯一即可。一个主体可以有多个principals，但只有一个Primary principals，一般是用户名/密码/手机号。 4.credentials：证明/凭证，即只有主体知道的安全值，如密码/数字证书等。 最常见的principals和credentials组合就是用户名/密码了。 5.Realms：用于进行权限信息的验证，需要自己实现。 6.Realm 本质上是一个特定的安全 DAO：它封装与数据源连接的细节，得到Shiro 所需的相关的数据。 在配置 Shiro 的时候，你必须指定至少一个Realm 来实现认证（authentication）和/或授权（authorization）。 我们需要实现Realms的Authentication 和 Authorization。其中 Authentication 是用来验证用户身份，Authorization 是授权访问控制，用于对用户进行的操作授权，证明该用户是否允许进行当前操作，如访问某个链接，某个资源文件等。 7.SimpleHash，可以通过特定算法(比如md5)配合盐值salt，对密码进行多次加密。
+三 Shiro配置 1.Spring集成Shiro一般通过xml配置，SpringBoot集成Shiro一般通过java代码配合@Configuration和@Bean配置。 2.Shiro的核心通过过滤器Filter实现。Shiro中的Filter是通过URL规则来进行过滤和权限校验，所以我们需要定义一系列关于URL的规则和访问权限。 3.SpringBoot集成Shiro，我们需要写的
+  
+</article>
+</div>
+    </main>
+
+    
+  </body>
+</html>

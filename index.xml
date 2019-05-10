@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://capitalsky.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 May 2019 23:11:25 +0800</lastBuildDate>
+    
+	<atom:link href="https://capitalsky.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blog Two</title>
+      <link>https://capitalsky.github.io/content/post/blog-two/</link>
+      <pubDate>Fri, 10 May 2019 23:11:25 +0800</pubDate>
+      
+      <guid>https://capitalsky.github.io/content/post/blog-two/</guid>
+      <description>shiro权限管理
+一 概念 Authentication(认证)：用户身份识别及登录。 Authorization(授权)：访问控制。比如某个用户是否具有某个操作的使用权限。 Session Management(会话管理)：特定于用户的会话管理，甚至在非web或EJB应用程序。 Cryptography(加密)：在对数据源使用加密算法加密的同时，保证易于使用。
+二 主要的类 1.Subject：当前用户，Subject可以是一个人，也可以是第三方服务 2.SecurityManager：管理所有Subject，可以配合内部安全组件。 3.principals：身份，即主体的标识属性，可以是任何东西，如用户名、邮箱等，唯一即可。一个主体可以有多个principals，但只有一个Primary principals，一般是用户名/密码/手机号。 4.credentials：证明/凭证，即只有主体知道的安全值，如密码/数字证书等。 最常见的principals和credentials组合就是用户名/密码了。 5.Realms：用于进行权限信息的验证，需要自己实现。 6.Realm 本质上是一个特定的安全 DAO：它封装与数据源连接的细节，得到Shiro 所需的相关的数据。 在配置 Shiro 的时候，你必须指定至少一个Realm 来实现认证（authentication）和/或授权（authorization）。 我们需要实现Realms的Authentication 和 Authorization。其中 Authentication 是用来验证用户身份，Authorization 是授权访问控制，用于对用户进行的操作授权，证明该用户是否允许进行当前操作，如访问某个链接，某个资源文件等。 7.SimpleHash，可以通过特定算法(比如md5)配合盐值salt，对密码进行多次加密。
+三 Shiro配置 1.Spring集成Shiro一般通过xml配置，SpringBoot集成Shiro一般通过java代码配合@Configuration和@Bean配置。 2.Shiro的核心通过过滤器Filter实现。Shiro中的Filter是通过URL规则来进行过滤和权限校验，所以我们需要定义一系列关于URL的规则和访问权限。 3.SpringBoot集成Shiro，我们需要写的</description>
+    </item>
+    
+    <item>
+      <title>My First Blog</title>
+      <link>https://capitalsky.github.io/content/post/my-first-blog/</link>
+      <pubDate>Fri, 10 May 2019 22:26:37 +0800</pubDate>
+      
+      <guid>https://capitalsky.github.io/content/post/my-first-blog/</guid>
+      <description>shiro权限管理
+一 概念 Authentication(认证)：用户身份识别及登录。 Authorization(授权)：访问控制。比如某个用户是否具有某个操作的使用权限。 Session Management(会话管理)：特定于用户的会话管理，甚至在非web或EJB应用程序。 Cryptography(加密)：在对数据源使用加密算法加密的同时，保证易于使用。
+二 主要的类 1.Subject：当前用户，Subject可以是一个人，也可以是第三方服务 2.SecurityManager：管理所有Subject，可以配合内部安全组件。 3.principals：身份，即主体的标识属性，可以是任何东西，如用户名、邮箱等，唯一即可。一个主体可以有多个principals，但只有一个Primary principals，一般是用户名/密码/手机号。 4.credentials：证明/凭证，即只有主体知道的安全值，如密码/数字证书等。 最常见的principals和credentials组合就是用户名/密码了。 5.Realms：用于进行权限信息的验证，需要自己实现。 6.Realm 本质上是一个特定的安全 DAO：它封装与数据源连接的细节，得到Shiro 所需的相关的数据。 在配置 Shiro 的时候，你必须指定至少一个Realm 来实现认证（authentication）和/或授权（authorization）。 我们需要实现Realms的Authentication 和 Authorization。其中 Authentication 是用来验证用户身份，Authorization 是授权访问控制，用于对用户进行的操作授权，证明该用户是否允许进行当前操作，如访问某个链接，某个资源文件等。 7.SimpleHash，可以通过特定算法(比如md5)配合盐值salt，对密码进行多次加密。
+三 Shiro配置 1.Spring集成Shiro一般通过xml配置，SpringBoot集成Shiro一般通过java代码配合@Configuration和@Bean配置。 2.Shiro的核心通过过滤器Filter实现。Shiro中的Filter是通过URL规则来进行过滤和权限校验，所以我们需要定义一系列关于URL的规则和访问权限。 3.SpringBoot集成Shiro，我们需要写的</description>
+    </item>
+    
+  </channel>
+</rss>
